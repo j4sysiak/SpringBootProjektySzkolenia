@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Counter-app
+Bundle-SymbolicName: counter-app
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: counter-app
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
