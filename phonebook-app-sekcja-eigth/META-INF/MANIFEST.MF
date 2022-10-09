@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Phonebook-app-sekcja-eigth
+Bundle-SymbolicName: phonebook-app-sekcja-eigth
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: phonebook-app-sekcja-eigth
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

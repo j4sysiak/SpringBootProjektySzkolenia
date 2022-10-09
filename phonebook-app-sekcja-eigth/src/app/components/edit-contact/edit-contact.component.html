@@ -1,0 +1,73 @@
+<h3>Edit contact details</h3>
+<hr>
+
+<form [formGroup]="contactForm">
+
+  <div class="form-group">
+    <label>Firstname</label>
+    <input class="form-control" formControlName="firstname">
+    <div class="err" *ngIf="contactForm.controls['firstname'].invalid && contactForm.controls['firstname'].dirty">
+      <div *ngIf="contactForm.controls['firstname'].errors.required">Firstname is mandatory</div>
+      <div *ngIf="contactForm.controls['firstname'].errors.minlength">Please input at least 3 letters</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Lastname</label>
+    <input class="form-control" formControlName="lastname">
+  </div>
+
+
+  <div class="form-group">
+    <label>Gender</label>
+    <label><input type="radio" name="gender" value="Male" formControlName="gender"> Male</label>
+    <label><input type="radio" name="gender" value="Female" formControlName="gender"> Female</label>
+  </div>
+
+  <div class="form-group">
+    <label>Email address</label>
+    <input class="form-control" formControlName="email">
+    <div class="err" *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].dirty">
+      <div *ngIf="contactForm.controls['email'].errors.required">Email address is mandatory</div>
+      <div *ngIf="contactForm.controls['email'].errors.email">Not a valid email expression</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Phone number</label>
+    <input class="form-control" formControlName="phone">
+    <div class="err" *ngIf="contactForm.controls['phone'].invalid && contactForm.controls['phone'].dirty">
+      <div *ngIf="contactForm.controls['phone'].errors.required">Phone number is mandatory</div>
+      <div *ngIf="contactForm.controls['phone'].errors.pattern">Please input 10 to 12 digits only</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Date of birth (YYYY-MM-DD)</label>
+    <input class="form-control" formControlName="dob">
+  </div>
+
+  <div class="form-group">
+    <label>City</label>
+    <input class="form-control" formControlName="city">
+  </div>
+
+  <div class="form-group">
+    <label>State</label>
+    <input class="form-control" formControlName="state">
+  </div>
+
+  <div class="form-group">
+    <label>Country</label>
+    <input class="form-control" formControlName="country">
+  </div>
+
+  <div class="form-group">
+    <label>Picture URL</label>
+    <input class="form-control" formControlName="picture">
+  </div>
+
+  <button class="btn btn-{{ contactForm.valid ? 'primary' : 'danger' }}" [disabled]="contactForm.invalid" (click)="saveChanges()">Save
+    changes</button>
+
+</form>

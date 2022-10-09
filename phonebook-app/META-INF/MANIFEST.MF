@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Phonebook-app
+Bundle-SymbolicName: phonebook-app
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: phonebook-app
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
