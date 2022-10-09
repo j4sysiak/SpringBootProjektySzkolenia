@@ -1,0 +1,15 @@
+<div class="container">
+
+  <h1>Assignment: Change the color of the block.</h1>
+  <hr/>
+  
+  
+  <button (click)="changeBackground('red')" class="btn btn-link">Red</button>
+  <button (click)="changeBackground('blue')" class="btn btn-link">Blue</button>
+  <button (click)="changeBackground('green')" class="btn btn-link">Green</button>
+  <button (click)="changeBackground('yellow')" class="btn btn-link">Yellow</button>
+  <button (click)="changeBackground('pink')" class="btn btn-link">Pink</button>
+  <button (click)="changeBackgroundRandomly()" class="btn btn-link">Random</button>
+
+  <div class="box" [ngStyle]="{backgroundColor: bgColor}"></div>
+</div>

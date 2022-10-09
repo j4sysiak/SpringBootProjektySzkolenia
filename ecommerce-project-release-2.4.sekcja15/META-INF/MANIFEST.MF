@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Sekcja15
+Bundle-SymbolicName: ecommerce-project-release-2.4.sekcja15
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: ecommerce-project-release-2.4.sekcja15
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

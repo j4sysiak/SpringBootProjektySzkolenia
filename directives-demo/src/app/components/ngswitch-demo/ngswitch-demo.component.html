@@ -1,0 +1,35 @@
+<h3>ngSwitch Demo</h3>
+
+<button class="btn btn-link" (click)="setChoice(1)">Tiger</button>
+<button class="btn btn-link" (click)="setChoice(2)">Button 2</button>
+<button class="btn btn-link" (click)="setChoice(3)">Button 3</button>
+<button class="btn btn-link" (click)="setChoice(4)">Button 4</button>
+<button class="btn btn-link" (click)="setChoice(5)">Default</button>
+
+<div [ngSwitch]="choice">
+    <div *ngSwitchCase="1">
+        <div class="row">
+            <div class="col">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/800px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg" alt="">
+            </div>
+            <div class="col">
+                The tiger (Panthera tigris) is the largest extant cat species and a member of the genus Panthera. 
+                It is most recognisable for its dark vertical stripes on orange-brown fur with a lighter underside. 
+                It is an apex predator, primarily preying on ungulates such as deer and wild boar. 
+                It is territorial and generally a solitary but social predator, requiring large contiguous areas of habitat, 
+                which support its requirements for prey and rearing of its offspring. 
+                Tiger cubs stay with their mother for about two years, before they become independent and leave their mother's 
+                home range to establish their own.
+            </div>
+        </div>
+    </div>
+
+
+    <div *ngSwitchCase="2">This is dv number 2</div>
+    <div *ngSwitchCase="3">This is dv number 3</div>
+    <div *ngSwitchCase="4">This is dv number 4</div>
+  
+    <div *ngSwitchDefault>
+        there is no data available
+    </div>
+</div>

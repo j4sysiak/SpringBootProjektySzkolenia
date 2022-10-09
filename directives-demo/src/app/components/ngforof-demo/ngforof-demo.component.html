@@ -1,0 +1,15 @@
+<h3>ngForOf Demo</h3>
+<hr>
+
+<button class="btn btn-link" (click)="ngOnInit()">Load data</button>
+
+<h4 *ngIf="people.length>0">There are {{people.length}} contacts</h4>
+<h4 *ngIf="people.length===0">There are no contacts in your address book</h4>
+<ul>
+    <li *ngFor = "let p of people; index as i" [ngClass]="getCssClass(p.age)">
+        <img [src]="p.picture" [ngStyle]="imgStyles">
+        {{p.name}} is a person from {{p.city}}
+        <button class="btn btn-warning" (click)="deletePerson(i)">X</button>
+    </li>
+</ul>
+
