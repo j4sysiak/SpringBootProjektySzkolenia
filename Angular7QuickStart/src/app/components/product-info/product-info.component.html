@@ -1,0 +1,24 @@
+<div class="product-info">
+
+  <img class="product-image" [src]="product.PICTURE" alt="">
+
+  <div>
+    <label>Product name</label>
+    <label>: {{ product.NAME }}</label>
+  </div>
+
+  <div>
+    <label>Brand</label>
+    <label>: {{ product.BRAND_NAME | uppercase }}</label>
+  </div>
+
+  <div>
+    <label>Category</label>
+    <label>: {{ product.CATEGORY_NAME }}</label>
+  </div>
+
+  <div>
+    <label>Unit price</label>
+    <label>: {{ product.UNIT_PRICE  }}</label>
+  </div>
+</div>

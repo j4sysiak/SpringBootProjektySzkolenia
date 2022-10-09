@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Angular7QuickStart-two
+Bundle-SymbolicName: Angular7QuickStart-two
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: Angular7QuickStart-two
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

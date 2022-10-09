@@ -1,0 +1,18 @@
+.product-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    float: left;
+    margin: 10px;
+}
+
+.product-info {
+    border: 1px dotted #ccc;
+    min-height: 100px;
+    padding: 15px;
+}
+
+.product-info  label:first-child {
+    width: 130px;
+    display: inline-block;
+}
